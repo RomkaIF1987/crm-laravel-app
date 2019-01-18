@@ -31,9 +31,13 @@
                         @foreach($companies as $company)
                             <tr>
                                 <th scope="row" class="text-center">{{$company->id}}</th>
-                                <td class="text-center"><img src="storage/logo_companies/{{$company->logo}}" width="70"
-                                                             height="70"></td>
-                                <td class="text-center">{{$company->name}}</td>
+                                <td class="text-center"><a
+                                            href="{{route('companies.show', ['id' => $company->id])}}"><img
+                                                src="storage/logo_companies/{{$company->logo}}" width="70"
+                                                height="70"></a></td>
+                                <td class="text-center"><a
+                                            href="{{route('companies.show', ['id' => $company->id])}}">{{$company->name}}</a>
+                                </td>
                                 <td class="text-center">{{$company->email}}</td>
                                 <td class="text-center">{{$company->website}}</td>
                                 @auth

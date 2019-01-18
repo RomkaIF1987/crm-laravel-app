@@ -24,7 +24,7 @@ class EmployeesController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
