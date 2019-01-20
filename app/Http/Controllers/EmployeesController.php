@@ -77,7 +77,8 @@ class EmployeesController extends Controller
     {
         return view('employees.edit', [
             'employee' => $employee,
-            'company' => $company
+            'company' => $company,
+            'companies' => Company::all()
         ]);
     }
 
@@ -95,10 +96,11 @@ class EmployeesController extends Controller
             'last_name' => 'required|max:255',
             'email' => 'required|email',
             'phone' => 'required',
+            'company_id' => 'required'
         ]);
 
-        // create new company
-        Employee::update($params);
+        // create new employee
+        $employee->update($params);
 
         return redirect('/companies/' . $request->input('company_id'));
     }
