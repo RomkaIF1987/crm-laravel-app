@@ -2,7 +2,7 @@
 <div class="form-group">
     <label for="formGroupExampleInput">Name</label>
     <input type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" name="name" id="name"
-           placeholder="Enter name" value="{{old('name') ?? $company->name}}">
+           placeholder="Enter name" value="{{old('name') ?? $company->name}}" required autofocus>
     @if($errors->has('name'))
         <div class="invalid-feedback">
             {{$errors->get('name')[0]}}
@@ -12,7 +12,7 @@
 <div class="form-group">
     <label for="formGroupExampleInput2">Email</label>
     <input type="email" class="form-control {{$errors->has('email') ? 'is-invalid' : ''}}" name="email" id="email"
-           placeholder="Enter email" value="{{old('email') ?? $company->email}}">
+           placeholder="Enter email" value="{{old('email') ?? $company->email}}" required autofocus>
     @if($errors->has('email'))
         <div class="invalid-feedback">
             {{$errors->get('email')[0]}}
@@ -22,7 +22,7 @@
 <div class="form-group">
     <label for="formGroupExampleInput2">Website</label>
     <input type="text" class="form-control {{$errors->has('website') ? 'is-invalid' : ''}} " name="website" id="website"
-           placeholder="Enter website" value="{{old('website') ?? $company->website}}">
+           placeholder="Enter website" value="{{old('website') ?? $company->website}}" required autofocus>
     @if($errors->has('website'))
         <div class="invalid-feedback">
             {{$errors->get('website')[0]}}

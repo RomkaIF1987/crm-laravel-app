@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2> Company {{$company->name}}</h2>
+    <h2 class="text-center"> Company {{$company->name}}</h2>
 
     @auth
         <div style="padding: 20px">

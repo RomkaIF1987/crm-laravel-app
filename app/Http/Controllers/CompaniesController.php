@@ -17,7 +17,7 @@ class CompaniesController extends Controller
     public function index()
     {
         return view('companies.index', [
-            'companies' => Company::paginate(1)
+            'companies' => Company::paginate(10)
         ]);
     }
 
@@ -68,10 +68,9 @@ class CompaniesController extends Controller
      * Display the specified resource.
      *
      * @param Company $company
-     * @param Employee $employee
      * @return \Illuminate\Http\Response
      */
-    public function show(Company $company, Employee $employee)
+    public function show(Company $company)
     {
         return view('companies.show', [
             'company' => $company,

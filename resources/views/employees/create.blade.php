@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2> ADD NEW EMPLOYEE FROM COMPANY</h2>
+    <h2 class="text-center"> ADD NEW EMPLOYEE FROM COMPANY</h2>
 
-    <form action="{{route('employees.store')}}" method="POST">
+    <form action="{{route('employees.store')}}" method="POST" style="padding: 20px">
         @include('employees.partials.form')
         <div>
             <input type="hidden" name="company_id" value="{{old('company_id') ?? $company_id}}">
