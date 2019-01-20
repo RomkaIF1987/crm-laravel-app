@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Company;
 use App\Employee;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class CompaniesController extends Controller
 {
@@ -16,13 +17,13 @@ class CompaniesController extends Controller
     public function index()
     {
         return view('companies.index', [
-            'companies' => Company::all()
+            'companies' => Company::paginate(1)
         ]);
     }
 
     /**
      * Show the form for creating a new resource.
- * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response
      */
     public function create()
     {
@@ -34,7 +35,7 @@ class CompaniesController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -58,7 +59,7 @@ class CompaniesController extends Controller
         $params['logo'] = $fileNameToStore;
 
         // create new company
-        $company = Company::create($params);
+        Company::create($params);
 
         return redirect()->route('companies.index');
     }
@@ -100,23 +101,35 @@ class CompaniesController extends Controller
      */
     public function update(Request $request, Company $company)
     {
-        $params = $request->validate([
-            'name' => 'required|max:255',
-            'email' => 'required|email',
-            'website' => 'required|max:255',
-            'logo' => 'image|max:1999|'
-        ]);
 
-        // get Extension
-        $extension = $request->file('logo')->getClientOriginalExtension();
+        if ($request->hasFile('logo')) {
 
-        // create new file name
-        $fileNameToStore = time() . '.' . $extension;
+            Storage::delete("public/logo_companies/$company->logo");
 
-        // save file in storage
-        $request->file('logo')->storeAs('public/logo_companies', $fileNameToStore);
+            $params = $request->validate([
+                'name' => 'required|max:255',
+                'email' => 'required|email',
+                'website' => 'required|max:255',
+                'logo' => 'image|max:1999|'
+            ]);
 
-        $params['logo'] = $fileNameToStore;
+            // get Extension
+            $extension = $request->file('logo')->getClientOriginalExtension();
+
+            // create new file name
+            $fileNameToStore = time() . '.' . $extension;
+
+            // save file in storage
+            $request->file('logo')->storeAs('public/logo_companies', $fileNameToStore);
+
+            $params['logo'] = $fileNameToStore;
+        } else {
+            $params = $request->validate([
+                'name' => 'required|max:255',
+                'email' => 'required|email',
+                'website' => 'required|max:255'
+            ]);
+        }
 
         // update company
         $company->update($params);

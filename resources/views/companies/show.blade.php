@@ -5,7 +5,8 @@
 
     @auth
         <div style="padding: 20px">
-            {{--<a class="btn btn-success" href="{{route('employees.create')}}" role="button">Add new Employee</a>--}}
+            <a class="btn btn-success" href="{{route('employees.create', ['company' => $company->id])}}" role="button">Add
+                new Employee</a>
         </div>
     @endauth
     <div class="table-responsive" style="padding: 50px">
@@ -39,7 +40,7 @@
                                 <td class="text-center">{{$employee->phone}}</td>
                                 @auth
                                     <td>
-                                        <a href="{{route('employees.edit', ['id' => $employee->id])}}"
+                                        <a href="{{route('employees.edit', ['employee' => $employee->id])}}"
                                            class="btn btn-primary">Edit</a>
                                         <form action="{{route('employees.destroy', ['$employee' => $employee])}}"
                                               method="POST"

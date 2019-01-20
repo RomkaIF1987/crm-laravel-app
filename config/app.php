@@ -13,6 +13,7 @@ return [
     |
     */
 
+    'home' => 'Home',
     'name' => env('APP_NAME', 'CRM Company'),
 
     /*

@@ -20,5 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('companies', 'CompaniesController');
-Route::resource('employees', 'EmployeesController');
+
+Route::get('/employees/create/{company}', 'EmployeesController@create')->name('employees.create');
+Route::post('/employees/store', 'EmployeesController@store')->name('employees.store');
+Route::get('/employees/{employee}/edit', 'EmployeesController@edit')->name('employees.edit');
+Route::patch('/employees/{employee}', 'EmployeesController@update')->name('employees.update');
+Route::delete('/employees/{employee}', 'EmployeesController@destroy')->name('employees.destroy');
 

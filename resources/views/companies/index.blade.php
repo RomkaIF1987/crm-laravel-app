@@ -32,11 +32,11 @@
                             <tr>
                                 <th scope="row" class="text-center">{{$company->id}}</th>
                                 <td class="text-center"><a
-                                            href="{{route('companies.show', ['id' => $company->id])}}"><img
+                                            href="{{route('companies.show', ['company' => $company->id])}}"><img
                                                 src="storage/logo_companies/{{$company->logo}}" width="70"
                                                 height="70"></a></td>
                                 <td class="text-center"><a
-                                            href="{{route('companies.show', ['id' => $company->id])}}">{{$company->name}}</a>
+                                            href="{{route('companies.show', ['company' => $company->id])}}">{{$company->name}}</a>
                                 </td>
                                 <td class="text-center">{{$company->email}}</td>
                                 <td class="text-center">{{$company->website}}</td>
@@ -61,5 +61,6 @@
             </tr>
             </thead>
         </table>
+        <div>{{$companies->links()}}</div>
     </div>
 @endsection
