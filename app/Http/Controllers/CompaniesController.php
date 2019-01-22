@@ -6,6 +6,7 @@ use App\Company;
 use App\Employee;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use App\Mail\OrderShipped;
 
 class CompaniesController extends Controller
 {
@@ -59,7 +60,11 @@ class CompaniesController extends Controller
         $params['logo'] = $fileNameToStore;
 
         // create new company
-        Company::create($params);
+        $company = Company::create($params);
+
+        \Mail::to('romanzhyliak@gmail.com')->send(
+            new OrderShipped($company)
+        );
 
         return redirect()->route('companies.index');
     }
