@@ -30,9 +30,12 @@
     @endif
 </div>
 <div class="form-group">
-    <label for="exampleFormControlFile1">Input logo image</label>{{old('logo') ?? $company->logo}}
-    <input type="file" class="form-control-file {{$errors->has('logo') ? 'is-invalid' : ''}} " name="logo" id="logo"
-           value="{{old('logo') ?? $company->logo}}">
+    <label for="exampleFormControlFile1">Input logo image</label>
+    @if($company->logo)
+        <img src="/storage/logo_companies/{{$company->logo}}">
+        <p>If you want to update logo insert it below</p>
+    @endif
+    <input type="file" class="form-control-file {{$errors->has('logo') ? 'is-invalid' : ''}} " name="logo" id="logo">
     @if($errors->has('logo'))
         <div class="invalid-feedback">
             {{$errors->get('logo')[0]}}

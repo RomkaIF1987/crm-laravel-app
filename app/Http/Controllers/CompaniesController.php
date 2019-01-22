@@ -100,17 +100,18 @@ class CompaniesController extends Controller
      */
     public function update(Request $request, Company $company)
     {
-
+        $rules = [
+            'name' => 'required|max:255',
+            'email' => 'required|email',
+            'website' => 'required|max:255',
+        ];
         if ($request->hasFile('logo')) {
+
+            $rules['logo'] = 'image|max:1999|';
 
             Storage::delete("public/logo_companies/$company->logo");
 
-            $params = $request->validate([
-                'name' => 'required|max:255',
-                'email' => 'required|email',
-                'website' => 'required|max:255',
-                'logo' => 'image|max:1999|'
-            ]);
+            $params = $request->validate($rules);
 
             // get Extension
             $extension = $request->file('logo')->getClientOriginalExtension();
@@ -123,11 +124,7 @@ class CompaniesController extends Controller
 
             $params['logo'] = $fileNameToStore;
         } else {
-            $params = $request->validate([
-                'name' => 'required|max:255',
-                'email' => 'required|email',
-                'website' => 'required|max:255'
-            ]);
+            $params = $request->validate($rules);
         }
 
         // update company
