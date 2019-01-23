@@ -24,7 +24,7 @@
 <div class="form-group">
     <label for="formGroupExampleInput2">Email</label>
     <input type="email" class="form-control {{$errors->has('email') ? 'is-invalid' : ''}}" name="email" id="email"
-           placeholder="Enter email" value="{{old('email') ?? $employee->email}}" required autofocus>
+           placeholder="Enter email" value="{{old('email') ?? $employee->email}}">
 </div>
 @if($errors->has('email'))
     <div class="invalid-feedback">
@@ -34,7 +34,7 @@
 <div class="form-group">
     <label for="formGroupExampleInput2">Phone</label>
     <input type="number" class="form-control {{$errors->has('phone') ? 'is-invalid' : ''}}" name="phone" id="phone"
-           placeholder="Enter phone" value="{{old('phone') ?? $employee->phone}}" required autofocus>
+           placeholder="Enter phone" value="{{old('phone') ?? $employee->phone}}">
 </div>
 @if($errors->has('phone'))
     <div class="invalid-feedback">

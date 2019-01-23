@@ -27,7 +27,7 @@ class EmployeeRequest extends FormRequest
             'first_name' => 'required|max:255',
             'last_name' => 'required|max:255',
             'email' => 'nullable|email|unique:employees,email',
-            'phone' => 'nullable|unique:employees,phone',
+            'phone' => 'nullable',
             'company_id' => 'required'
         ];
     }
