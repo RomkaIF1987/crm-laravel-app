@@ -2,14 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Company;
-use App\Employee;
+use App\Http\Models\Company;
+use App\Http\Requests\CompanyRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use App\Mail\OrderShipped;
 
 class CompaniesController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth', ['only' => ['create', 'store', 'edit', 'delete']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -35,18 +42,12 @@ class CompaniesController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request $request
+     * @param CompanyRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CompanyRequest $request)
     {
-        $params = $request->validate([
-            'name' => 'required|max:255',
-            'email' => 'required|email',
-            'website' => 'required|max:255',
-            'logo' => 'image|max:1999|'
-        ]);
+        $params = $request->validated();
 
         // get Extension
         $extension = $request->file('logo')->getClientOriginalExtension();
@@ -59,10 +60,9 @@ class CompaniesController extends Controller
 
         $params['logo'] = $fileNameToStore;
 
-        // create new company
         $company = Company::create($params);
 
-        \Mail::to('romanzhyliak@gmail.com')->send(
+        Mail::to('romanzhyliak@gmail.com')->send(
             new OrderShipped($company)
         );
 
@@ -78,8 +78,7 @@ class CompaniesController extends Controller
     public function show(Company $company)
     {
         return view('companies.show', [
-            'company' => $company,
-            'employees' => Employee::all()
+            'company' => $company
         ]);
     }
 
@@ -101,7 +100,7 @@ class CompaniesController extends Controller
      *
      * @param  \Illuminate\Http\Request $request
      * @param Company $company
-     * @return void
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request, Company $company)
     {
@@ -132,7 +131,6 @@ class CompaniesController extends Controller
             $params = $request->validate($rules);
         }
 
-        // update company
         $company->update($params);
 
         return redirect()->route('companies.index');
@@ -142,12 +140,13 @@ class CompaniesController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Company $company
-     * @return void
+     * @return \Illuminate\Http\RedirectResponse
      * @throws \Exception
      */
     public function destroy(Company $company)
     {
         $company->delete();
+        $company->employees()->delete();
 
         return redirect()->route('companies.index');
     }

@@ -2,68 +2,44 @@
 
 namespace App\Http\Controllers;
 
-use App\Company;
-use App\Employee;
-use Illuminate\Http\Request;
+use App\Http\Requests\EmployeeRequest;
+use App\Http\Models\Company;
+use App\Http\Models\Employee;
 
 class EmployeesController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return void
-     */
-    public function index()
+    public function __construct()
     {
-        //
+        $this->middleware('auth');
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @param $company_id
+     * @param $companyId
      * @return \Illuminate\Http\Response
      */
-    public function create($company_id)
+    public function create($companyId)
     {
         return view('employees.create', [
             'employee' => new Employee(),
-            'company_id' => $company_id
+            'company_id' => $companyId
         ]);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @param Company $company
+     * @param EmployeeRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Company $company)
+    public function store(EmployeeRequest $request)
     {
-        $params = $request->validate([
-            'first_name' => 'required|max:255',
-            'last_name' => 'required|max:255',
-            'email' => 'required|email',
-            'phone' => 'required',
-            'company_id' => 'required'
-        ]);
+        $params = $request->validated();
 
-        // create new company
-        $employee = Employee::create($params);
+        Employee::create($params);
 
-        return redirect('/companies/' . $request->input('company_id'));
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Employee $employees
-     * @return void
-     */
-    public function show(Employee $employees)
-    {
-        //
+        return redirect('/companies/' . $request->get('company_id'));
     }
 
     /**
@@ -85,24 +61,17 @@ class EmployeesController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param EmployeeRequest $request
      * @param Employee $employee
-     * @return void
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update(Request $request, Employee $employee)
+    public function update(EmployeeRequest $request, Employee $employee)
     {
-        $params = $request->validate([
-            'first_name' => 'required|max:255',
-            'last_name' => 'required|max:255',
-            'email' => 'required|email',
-            'phone' => 'required',
-            'company_id' => 'required'
-        ]);
+        $params = $request->validated();
 
-        // create new employee
         $employee->update($params);
 
-        return redirect('/companies/' . $request->input('company_id'));
+        return redirect('/companies/' . $request->get('company_id'));
     }
 
     /**
