@@ -27,3 +27,4 @@ Route::get('/employees/{employee}/edit', 'EmployeesController@edit')->name('empl
 Route::patch('/employees/{employee}', 'EmployeesController@update')->name('employees.update');
 Route::delete('/employees/{employee}', 'EmployeesController@destroy')->name('employees.destroy');
 
+Route::get('/get_datatable', 'DataTableController@get_datatable')->name('datatable.get_datatable');

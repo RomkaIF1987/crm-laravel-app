@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Models\Company;
 use App\Http\Requests\CompanyRequest;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use App\Mail\OrderShipped;
@@ -21,6 +20,7 @@ class CompaniesController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function index()
     {
@@ -28,6 +28,7 @@ class CompaniesController extends Controller
             'companies' => Company::paginate(5)
         ]);
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -102,20 +103,12 @@ class CompaniesController extends Controller
      * @param Company $company
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, Company $company)
+    public function update(CompanyRequest $request, Company $company)
     {
-        $rules = [
-            'name' => 'required|max:255',
-            'email' => 'required|email',
-            'website' => 'required|max:255',
-        ];
+        $params = $request->validated();
+
         if ($request->hasFile('logo')) {
-
-            $rules['logo'] = 'image|max:1999|';
-
             Storage::delete("public/logo_companies/$company->logo");
-
-            $params = $request->validate($rules);
 
             // get Extension
             $extension = $request->file('logo')->getClientOriginalExtension();
@@ -127,8 +120,6 @@ class CompaniesController extends Controller
             $request->file('logo')->storeAs('public/logo_companies', $fileNameToStore);
 
             $params['logo'] = $fileNameToStore;
-        } else {
-            $params = $request->validate($rules);
         }
 
         $company->update($params);

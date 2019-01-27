@@ -3,7 +3,12 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use App\Http\Models\Company;
 
+/**
+ *
+ * @property mixed company
+ */
 class CompanyRequest extends FormRequest
 {
     /**
@@ -23,11 +28,28 @@ class CompanyRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            'name' => 'required|max:255',
-            'email' => 'nullable|email|unique:companies,email',
-            'website' => 'nullable|max:255|unique:companies,website',
-            'logo' => 'image|max:1999'
-        ];
+        switch ($this->method()) {
+            case 'POST':
+                {
+                    return [
+                        'name' => 'required|max:255',
+                        'email' => 'nullable|email|unique:companies',
+                        'website' => 'nullable|max:255|unique:companies',
+                        'logo' => 'nullable|image|max:1999'
+                    ];
+                }
+            case 'PUT':
+            case 'PATCH':
+                {
+                    return [
+                        'name' => 'required|max:255',
+                        'email' => 'nullable|email|unique:companies' . $this->company->id,
+                        'website' => 'nullable|max:255|unique:companies' . $this->company->id,
+                        'logo' => 'nullable|image|max:1999'
+                    ];
+                }
+            default:
+                break;
+        }
     }
 }
