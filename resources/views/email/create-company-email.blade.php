@@ -1,12 +1,12 @@
 @component('mail::message')
-    # New company created
+# New company created
 
-    The body of your message.
+The body of your message.
 
-    @component('mail::button', ['url' => route('companies.show',['company'=>$company->id])])
-        Go to created company
-    @endcomponent
+@component('mail::button', ['url' => route('companies.show',['company'=>$company->id])])
+Go to created company
+@endcomponent
 
-    Thanks,<br>
-    {{ config('app.name') }}
+Thanks,<br>
+{{ config('app.name') }}
 @endcomponent
