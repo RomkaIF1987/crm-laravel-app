@@ -15,7 +15,14 @@ class DataTableController extends Controller
     {
         $companies = Company::select(['id', 'logo', 'name', 'email', 'website']);
 
-        return Datatables::of($companies)->make();
+        return Datatables::of($companies)
+            ->addColumn('actions', function (Company $company) {
+                return view('companies.partials.actions', compact('company'));
+            })
+            ->addColumn('name', function (Company $company) {
+                return view('companies.partials.employees-show', compact('company'));
+            })
+            ->rawColumns(['actions', 'name'])->make();
     }
 
 }

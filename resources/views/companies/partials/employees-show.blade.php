@@ -1,0 +1,1 @@
+<a href="{{route('companies.show', ['company' => $company->id])}}">{{$company->name}}</a>

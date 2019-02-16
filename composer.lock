@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-      "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-  "content-hash": "bf6cbf28afaa4d525201d10790153f06",
+    "content-hash": "053d8e2de22830fc83caef1b4f7a5ee4",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -638,64 +638,64 @@
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
-          "name": "jeremeamia/SuperClosure",
-          "version": "2.4.0",
-          "source": {
-            "type": "git",
-            "url": "https://github.com/jeremeamia/super_closure.git",
-            "reference": "5707d5821b30b9a07acfb4d76949784aaa0e9ce9"
-          },
-          "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/5707d5821b30b9a07acfb4d76949784aaa0e9ce9",
-            "reference": "5707d5821b30b9a07acfb4d76949784aaa0e9ce9",
-            "shasum": ""
-          },
-          "require": {
-            "nikic/php-parser": "^1.2|^2.0|^3.0|^4.0",
-            "php": ">=5.4",
-            "symfony/polyfill-php56": "^1.0"
-          },
-          "require-dev": {
-            "phpunit/phpunit": "^4.0|^5.0"
-          },
-          "type": "library",
-          "extra": {
-            "branch-alias": {
-              "dev-master": "2.4-dev"
-            }
-          },
-          "autoload": {
-            "psr-4": {
-              "SuperClosure\\": "src/"
-            }
-          },
-          "notification-url": "https://packagist.org/downloads/",
-          "license": [
-            "MIT"
-          ],
-          "authors": [
-            {
-              "name": "Jeremy Lindblom",
-              "email": "jeremeamia@gmail.com",
-              "homepage": "https://github.com/jeremeamia",
-              "role": "Developer"
-            }
-          ],
-          "description": "Serialize Closure objects, including their context and binding",
-          "homepage": "https://github.com/jeremeamia/super_closure",
-          "keywords": [
-            "closure",
-            "function",
-            "lambda",
-            "parser",
-            "serializable",
-            "serialize",
-            "tokenizer"
-          ],
-          "time": "2018-03-21T22:21:57+00:00"
+            "name": "jeremeamia/SuperClosure",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeremeamia/super_closure.git",
+                "reference": "5707d5821b30b9a07acfb4d76949784aaa0e9ce9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/5707d5821b30b9a07acfb4d76949784aaa0e9ce9",
+                "reference": "5707d5821b30b9a07acfb4d76949784aaa0e9ce9",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "^1.2|^2.0|^3.0|^4.0",
+                "php": ">=5.4",
+                "symfony/polyfill-php56": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SuperClosure\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Lindblom",
+                    "email": "jeremeamia@gmail.com",
+                    "homepage": "https://github.com/jeremeamia",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Serialize Closure objects, including their context and binding",
+            "homepage": "https://github.com/jeremeamia/super_closure",
+            "keywords": [
+                "closure",
+                "function",
+                "lambda",
+                "parser",
+                "serializable",
+                "serialize",
+                "tokenizer"
+            ],
+            "time": "2018-03-21T22:21:57+00:00"
         },
-      {
+        {
             "name": "laravel/framework",
             "version": "v5.7.21",
             "source": {
@@ -956,69 +956,69 @@
             "time": "2018-12-12T13:12:06+00:00"
         },
         {
-          "name": "laravel/telescope",
-          "version": "v1.0.10",
-          "source": {
-            "type": "git",
-            "url": "https://github.com/laravel/telescope.git",
-            "reference": "4962a3c3a5da71756dd01dad2ea86e55fbb86df8"
-          },
-          "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/laravel/telescope/zipball/4962a3c3a5da71756dd01dad2ea86e55fbb86df8",
-            "reference": "4962a3c3a5da71756dd01dad2ea86e55fbb86df8",
-            "shasum": ""
-          },
-          "require": {
-            "ext-json": "*",
-            "laravel/framework": "~5.7.7",
-            "moontoast/math": "^1.1",
-            "php": "^7.1.3",
-            "symfony/var-dumper": "^4.1"
-          },
-          "require-dev": {
-            "nunomaduro/larastan": "^0.3.7",
-            "orchestra/testbench": "~3.7"
-          },
-          "type": "library",
-          "extra": {
-            "branch-alias": {
-              "dev-master": "1.0-dev"
+            "name": "laravel/telescope",
+            "version": "v1.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/telescope.git",
+                "reference": "4962a3c3a5da71756dd01dad2ea86e55fbb86df8"
             },
-            "laravel": {
-              "providers": [
-                "Laravel\\Telescope\\TelescopeServiceProvider"
-              ]
-            }
-          },
-          "autoload": {
-            "psr-4": {
-              "Laravel\\Telescope\\": "src/"
-            }
-          },
-          "notification-url": "https://packagist.org/downloads/",
-          "license": [
-            "MIT"
-          ],
-          "authors": [
-            {
-              "name": "Taylor Otwell",
-              "email": "taylor@laravel.com"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/telescope/zipball/4962a3c3a5da71756dd01dad2ea86e55fbb86df8",
+                "reference": "4962a3c3a5da71756dd01dad2ea86e55fbb86df8",
+                "shasum": ""
             },
-            {
-              "name": "Mohamed Said",
-              "email": "mohamed@laravel.com"
-            }
-          ],
-          "description": "An elegant debug assistant for the Laravel framework.",
-          "keywords": [
-            "debugging",
-            "laravel",
-            "monitoring"
-          ],
-          "time": "2018-12-09T16:34:14+00:00"
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": "~5.7.7",
+                "moontoast/math": "^1.1",
+                "php": "^7.1.3",
+                "symfony/var-dumper": "^4.1"
+            },
+            "require-dev": {
+                "nunomaduro/larastan": "^0.3.7",
+                "orchestra/testbench": "~3.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Telescope\\TelescopeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Telescope\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Mohamed Said",
+                    "email": "mohamed@laravel.com"
+                }
+            ],
+            "description": "An elegant debug assistant for the Laravel framework.",
+            "keywords": [
+                "debugging",
+                "laravel",
+                "monitoring"
+            ],
+            "time": "2018-12-09T16:34:14+00:00"
         },
-      {
+        {
             "name": "laravel/tinker",
             "version": "v1.0.8",
             "source": {
@@ -1082,74 +1082,74 @@
             "time": "2018-10-12T19:39:35+00:00"
         },
         {
-          "name": "laravelcollective/html",
-          "version": "v5.7.1",
-          "source": {
-            "type": "git",
-            "url": "https://github.com/LaravelCollective/html.git",
-            "reference": "777b6d390811ba249255ed5750bf17a019cd88a5"
-          },
-          "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/LaravelCollective/html/zipball/777b6d390811ba249255ed5750bf17a019cd88a5",
-            "reference": "777b6d390811ba249255ed5750bf17a019cd88a5",
-            "shasum": ""
-          },
-          "require": {
-            "illuminate/http": "5.7.*",
-            "illuminate/routing": "5.7.*",
-            "illuminate/session": "5.7.*",
-            "illuminate/support": "5.7.*",
-            "illuminate/view": "5.7.*",
-            "php": ">=7.1.3"
-          },
-          "require-dev": {
-            "illuminate/database": "5.7.*",
-            "mockery/mockery": "~1.0",
-            "phpunit/phpunit": "~7.1"
-          },
-          "type": "library",
-          "extra": {
-            "branch-alias": {
-              "dev-master": "5.7-dev"
+            "name": "laravelcollective/html",
+            "version": "v5.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "777b6d390811ba249255ed5750bf17a019cd88a5"
             },
-            "laravel": {
-              "providers": [
-                "Collective\\Html\\HtmlServiceProvider"
-              ],
-              "aliases": {
-                "Form": "Collective\\Html\\FormFacade",
-                "Html": "Collective\\Html\\HtmlFacade"
-              }
-            }
-          },
-          "autoload": {
-            "psr-4": {
-              "Collective\\Html\\": "src/"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/777b6d390811ba249255ed5750bf17a019cd88a5",
+                "reference": "777b6d390811ba249255ed5750bf17a019cd88a5",
+                "shasum": ""
             },
-            "files": [
-              "src/helpers.php"
-            ]
-          },
-          "notification-url": "https://packagist.org/downloads/",
-          "license": [
-            "MIT"
-          ],
-          "authors": [
-            {
-              "name": "Taylor Otwell",
-              "email": "taylorotwell@gmail.com"
+            "require": {
+                "illuminate/http": "5.7.*",
+                "illuminate/routing": "5.7.*",
+                "illuminate/session": "5.7.*",
+                "illuminate/support": "5.7.*",
+                "illuminate/view": "5.7.*",
+                "php": ">=7.1.3"
             },
-            {
-              "name": "Adam Engebretson",
-              "email": "adam@laravelcollective.com"
-            }
-          ],
-          "description": "HTML and Form Builders for the Laravel Framework",
-          "homepage": "https://laravelcollective.com",
-          "time": "2018-09-05T18:32:53+00:00"
+            "require-dev": {
+                "illuminate/database": "5.7.*",
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.7-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Collective\\Html\\HtmlServiceProvider"
+                    ],
+                    "aliases": {
+                        "Form": "Collective\\Html\\FormFacade",
+                        "Html": "Collective\\Html\\HtmlFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                }
+            ],
+            "description": "HTML and Form Builders for the Laravel Framework",
+            "homepage": "https://laravelcollective.com",
+            "time": "2018-09-05T18:32:53+00:00"
         },
-      {
+        {
             "name": "lcobucci/jwt",
             "version": "3.2.5",
             "source": {
@@ -1292,84 +1292,84 @@
             "time": "2018-11-23T23:41:29+00:00"
         },
         {
-          "name": "maatwebsite/excel",
-          "version": "2.1.30",
-          "source": {
-            "type": "git",
-            "url": "https://github.com/Maatwebsite/Laravel-Excel.git",
-            "reference": "f5540c4ba3ac50cebd98b09ca42e61f926ef299f"
-          },
-          "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/f5540c4ba3ac50cebd98b09ca42e61f926ef299f",
-            "reference": "f5540c4ba3ac50cebd98b09ca42e61f926ef299f",
-            "shasum": ""
-          },
-          "require": {
-            "illuminate/cache": "^5.0",
-            "illuminate/config": "^5.0",
-            "illuminate/filesystem": "^5.0",
-            "illuminate/support": "^5.0",
-            "jeremeamia/superclosure": "^2.3",
-            "nesbot/carbon": "~1.0",
-            "php": ">=5.5",
-            "phpoffice/phpexcel": "^1.8.1",
-            "tijsverkoyen/css-to-inline-styles": "~2.0"
-          },
-          "require-dev": {
-            "mockery/mockery": "~1.0",
-            "orchestra/testbench": "3.1.*|3.2.*|3.3.*|3.4.*|3.5.*|3.6.*",
-            "phpseclib/phpseclib": "~1.0",
-            "phpunit/phpunit": "~4.0"
-          },
-          "suggest": {
-            "illuminate/http": "^5.0",
-            "illuminate/queue": "^5.0",
-            "illuminate/routing": "^5.0",
-            "illuminate/view": "^5.0"
-          },
-          "type": "library",
-          "extra": {
-            "laravel": {
-              "providers": [
-                "Maatwebsite\\Excel\\ExcelServiceProvider"
-              ],
-              "aliases": {
-                "Excel": "Maatwebsite\\Excel\\Facades\\Excel"
-              }
-            }
-          },
-          "autoload": {
-            "classmap": [
-              "src/Maatwebsite/Excel"
+            "name": "maatwebsite/excel",
+            "version": "2.1.30",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Maatwebsite/Laravel-Excel.git",
+                "reference": "f5540c4ba3ac50cebd98b09ca42e61f926ef299f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/f5540c4ba3ac50cebd98b09ca42e61f926ef299f",
+                "reference": "f5540c4ba3ac50cebd98b09ca42e61f926ef299f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "^5.0",
+                "illuminate/config": "^5.0",
+                "illuminate/filesystem": "^5.0",
+                "illuminate/support": "^5.0",
+                "jeremeamia/superclosure": "^2.3",
+                "nesbot/carbon": "~1.0",
+                "php": ">=5.5",
+                "phpoffice/phpexcel": "^1.8.1",
+                "tijsverkoyen/css-to-inline-styles": "~2.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.0",
+                "orchestra/testbench": "3.1.*|3.2.*|3.3.*|3.4.*|3.5.*|3.6.*",
+                "phpseclib/phpseclib": "~1.0",
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "illuminate/http": "^5.0",
+                "illuminate/queue": "^5.0",
+                "illuminate/routing": "^5.0",
+                "illuminate/view": "^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Maatwebsite\\Excel\\ExcelServiceProvider"
+                    ],
+                    "aliases": {
+                        "Excel": "Maatwebsite\\Excel\\Facades\\Excel"
+                    }
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/Maatwebsite/Excel"
+                ],
+                "psr-0": {
+                    "Maatwebsite\\Excel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
             ],
-            "psr-0": {
-              "Maatwebsite\\Excel\\": "src/"
-            }
-          },
-          "notification-url": "https://packagist.org/downloads/",
-          "license": [
-            "MIT"
-          ],
-          "authors": [
-            {
-              "name": "Maatwebsite.nl",
-              "email": "patrick@maatwebsite.nl"
-            }
-          ],
-          "description": "Supercharged Excel exports in Laravel",
-          "keywords": [
-            "PHPExcel",
-            "batch",
-            "csv",
-            "excel",
-            "export",
-            "import",
-            "laravel"
-          ],
-          "time": "2018-09-04T19:00:09+00:00"
+            "authors": [
+                {
+                    "name": "Maatwebsite.nl",
+                    "email": "patrick@maatwebsite.nl"
+                }
+            ],
+            "description": "Supercharged Excel exports in Laravel",
+            "keywords": [
+                "PHPExcel",
+                "batch",
+                "csv",
+                "excel",
+                "export",
+                "import",
+                "laravel"
+            ],
+            "time": "2018-09-04T19:00:09+00:00"
         },
-      {
+        {
             "name": "monolog/monolog",
             "version": "1.24.0",
             "source": {
@@ -1448,55 +1448,55 @@
             "time": "2018-11-05T09:00:11+00:00"
         },
         {
-          "name": "moontoast/math",
-          "version": "1.1.2",
-          "source": {
-            "type": "git",
-            "url": "https://github.com/ramsey/moontoast-math.git",
-            "reference": "c2792a25df5cad4ff3d760dd37078fc5b6fccc79"
-          },
-          "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/ramsey/moontoast-math/zipball/c2792a25df5cad4ff3d760dd37078fc5b6fccc79",
-            "reference": "c2792a25df5cad4ff3d760dd37078fc5b6fccc79",
-            "shasum": ""
-          },
-          "require": {
-            "ext-bcmath": "*",
-            "php": ">=5.3.3"
-          },
-          "require-dev": {
-            "jakub-onderka/php-parallel-lint": "^0.9.0",
-            "phpunit/phpunit": "^4.7|>=5.0 <5.4",
-            "satooshi/php-coveralls": "^0.6.1",
-            "squizlabs/php_codesniffer": "^2.3"
-          },
-          "type": "library",
-          "autoload": {
-            "psr-4": {
-              "Moontoast\\Math\\": "src/Moontoast/Math/"
-            }
-          },
-          "notification-url": "https://packagist.org/downloads/",
-          "license": [
-            "Apache-2.0"
-          ],
-          "authors": [
-            {
-              "name": "Ben Ramsey",
-              "email": "ben@benramsey.com",
-              "homepage": "https://benramsey.com"
-            }
-          ],
-          "description": "A mathematics library, providing functionality for large numbers",
-          "homepage": "https://github.com/ramsey/moontoast-math",
-          "keywords": [
-            "bcmath",
-            "math"
-          ],
-          "time": "2017-02-16T16:54:46+00:00"
+            "name": "moontoast/math",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/moontoast-math.git",
+                "reference": "c2792a25df5cad4ff3d760dd37078fc5b6fccc79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/moontoast-math/zipball/c2792a25df5cad4ff3d760dd37078fc5b6fccc79",
+                "reference": "c2792a25df5cad4ff3d760dd37078fc5b6fccc79",
+                "shasum": ""
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "^0.9.0",
+                "phpunit/phpunit": "^4.7|>=5.0 <5.4",
+                "satooshi/php-coveralls": "^0.6.1",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Moontoast\\Math\\": "src/Moontoast/Math/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com",
+                    "homepage": "https://benramsey.com"
+                }
+            ],
+            "description": "A mathematics library, providing functionality for large numbers",
+            "homepage": "https://github.com/ramsey/moontoast-math",
+            "keywords": [
+                "bcmath",
+                "math"
+            ],
+            "time": "2017-02-16T16:54:46+00:00"
         },
-      {
+        {
             "name": "nesbot/carbon",
             "version": "1.36.2",
             "source": {
@@ -1926,69 +1926,69 @@
             "time": "2016-01-26T13:27:02+00:00"
         },
         {
-          "name": "phpoffice/phpexcel",
-          "version": "1.8.2",
-          "source": {
-            "type": "git",
-            "url": "https://github.com/PHPOffice/PHPExcel.git",
-            "reference": "1441011fb7ecdd8cc689878f54f8b58a6805f870"
-          },
-          "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/1441011fb7ecdd8cc689878f54f8b58a6805f870",
-            "reference": "1441011fb7ecdd8cc689878f54f8b58a6805f870",
-            "shasum": ""
-          },
-          "require": {
-            "ext-mbstring": "*",
-            "ext-xml": "*",
-            "ext-xmlwriter": "*",
-            "php": "^5.2|^7.0"
-          },
-          "require-dev": {
-            "squizlabs/php_codesniffer": "2.*"
-          },
-          "type": "library",
-          "autoload": {
-            "psr-0": {
-              "PHPExcel": "Classes/"
-            }
-          },
-          "notification-url": "https://packagist.org/downloads/",
-          "license": [
-            "LGPL-2.1"
-          ],
-          "authors": [
-            {
-              "name": "Maarten Balliauw",
-              "homepage": "http://blog.maartenballiauw.be"
+            "name": "phpoffice/phpexcel",
+            "version": "1.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PHPExcel.git",
+                "reference": "1441011fb7ecdd8cc689878f54f8b58a6805f870"
             },
-            {
-              "name": "Erik Tilt"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/1441011fb7ecdd8cc689878f54f8b58a6805f870",
+                "reference": "1441011fb7ecdd8cc689878f54f8b58a6805f870",
+                "shasum": ""
             },
-            {
-              "name": "Franck Lefevre",
-              "homepage": "http://rootslabs.net"
+            "require": {
+                "ext-mbstring": "*",
+                "ext-xml": "*",
+                "ext-xmlwriter": "*",
+                "php": "^5.2|^7.0"
             },
-            {
-              "name": "Mark Baker",
-              "homepage": "http://markbakeruk.net"
-            }
-          ],
-          "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
-          "homepage": "https://github.com/PHPOffice/PHPExcel",
-          "keywords": [
-            "OpenXML",
-            "excel",
-            "php",
-            "spreadsheet",
-            "xls",
-            "xlsx"
-          ],
-          "abandoned": "phpoffice/phpspreadsheet",
-          "time": "2018-11-22T23:07:24+00:00"
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PHPExcel": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Maarten Balliauw",
+                    "homepage": "http://blog.maartenballiauw.be"
+                },
+                {
+                    "name": "Erik Tilt"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "http://rootslabs.net"
+                },
+                {
+                    "name": "Mark Baker",
+                    "homepage": "http://markbakeruk.net"
+                }
+            ],
+            "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+            "homepage": "https://github.com/PHPOffice/PHPExcel",
+            "keywords": [
+                "OpenXML",
+                "excel",
+                "php",
+                "spreadsheet",
+                "xls",
+                "xlsx"
+            ],
+            "abandoned": "phpoffice/phpspreadsheet",
+            "time": "2018-11-22T23:07:24+00:00"
         },
-      {
+        {
             "name": "psr/container",
             "version": "1.0.0",
             "source": {
@@ -3057,62 +3057,62 @@
             "time": "2018-09-21T13:07:52+00:00"
         },
         {
-          "name": "symfony/polyfill-php56",
-          "version": "v1.10.0",
-          "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/polyfill-php56.git",
-            "reference": "ff208829fe1aa48ab9af356992bb7199fed551af"
-          },
-          "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/ff208829fe1aa48ab9af356992bb7199fed551af",
-            "reference": "ff208829fe1aa48ab9af356992bb7199fed551af",
-            "shasum": ""
-          },
-          "require": {
-            "php": ">=5.3.3",
-            "symfony/polyfill-util": "~1.0"
-          },
-          "type": "library",
-          "extra": {
-            "branch-alias": {
-              "dev-master": "1.9-dev"
-            }
-          },
-          "autoload": {
-            "psr-4": {
-              "Symfony\\Polyfill\\Php56\\": ""
+            "name": "symfony/polyfill-php56",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php56.git",
+                "reference": "ff208829fe1aa48ab9af356992bb7199fed551af"
             },
-            "files": [
-              "bootstrap.php"
-            ]
-          },
-          "notification-url": "https://packagist.org/downloads/",
-          "license": [
-            "MIT"
-          ],
-          "authors": [
-            {
-              "name": "Nicolas Grekas",
-              "email": "p@tchwork.com"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/ff208829fe1aa48ab9af356992bb7199fed551af",
+                "reference": "ff208829fe1aa48ab9af356992bb7199fed551af",
+                "shasum": ""
             },
-            {
-              "name": "Symfony Community",
-              "homepage": "https://symfony.com/contributors"
-            }
-          ],
-          "description": "Symfony polyfill backporting some PHP 5.6+ features to lower PHP versions",
-          "homepage": "https://symfony.com",
-          "keywords": [
-            "compatibility",
-            "polyfill",
-            "portable",
-            "shim"
-          ],
-          "time": "2018-09-21T06:26:08+00:00"
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/polyfill-util": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php56\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 5.6+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2018-09-21T06:26:08+00:00"
         },
-      {
+        {
             "name": "symfony/polyfill-php72",
             "version": "v1.10.0",
             "source": {
@@ -3168,58 +3168,58 @@
             "time": "2018-09-21T13:07:52+00:00"
         },
         {
-          "name": "symfony/polyfill-util",
-          "version": "v1.10.0",
-          "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/polyfill-util.git",
-            "reference": "3b58903eae668d348a7126f999b0da0f2f93611c"
-          },
-          "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/3b58903eae668d348a7126f999b0da0f2f93611c",
-            "reference": "3b58903eae668d348a7126f999b0da0f2f93611c",
-            "shasum": ""
-          },
-          "require": {
-            "php": ">=5.3.3"
-          },
-          "type": "library",
-          "extra": {
-            "branch-alias": {
-              "dev-master": "1.9-dev"
-            }
-          },
-          "autoload": {
-            "psr-4": {
-              "Symfony\\Polyfill\\Util\\": ""
-            }
-          },
-          "notification-url": "https://packagist.org/downloads/",
-          "license": [
-            "MIT"
-          ],
-          "authors": [
-            {
-              "name": "Nicolas Grekas",
-              "email": "p@tchwork.com"
+            "name": "symfony/polyfill-util",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-util.git",
+                "reference": "3b58903eae668d348a7126f999b0da0f2f93611c"
             },
-            {
-              "name": "Symfony Community",
-              "homepage": "https://symfony.com/contributors"
-            }
-          ],
-          "description": "Symfony utilities for portability of PHP codes",
-          "homepage": "https://symfony.com",
-          "keywords": [
-            "compat",
-            "compatibility",
-            "polyfill",
-            "shim"
-          ],
-          "time": "2018-09-30T16:36:12+00:00"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/3b58903eae668d348a7126f999b0da0f2f93611c",
+                "reference": "3b58903eae668d348a7126f999b0da0f2f93611c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Util\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony utilities for portability of PHP codes",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compat",
+                "compatibility",
+                "polyfill",
+                "shim"
+            ],
+            "time": "2018-09-30T16:36:12+00:00"
         },
-      {
+        {
             "name": "symfony/process",
             "version": "v4.2.2",
             "source": {
@@ -3592,200 +3592,262 @@
             "time": "2018-10-30T17:29:25+00:00"
         },
         {
-          "name": "yajra/laravel-datatables-buttons",
-          "version": "v3.3.1",
-          "source": {
-            "type": "git",
-            "url": "https://github.com/yajra/laravel-datatables-buttons.git",
-            "reference": "f473e0695c668106665d68f002993a086a8705ab"
-          },
-          "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/yajra/laravel-datatables-buttons/zipball/f473e0695c668106665d68f002993a086a8705ab",
-            "reference": "f473e0695c668106665d68f002993a086a8705ab",
-            "shasum": ""
-          },
-          "require": {
-            "illuminate/console": "^5.4",
-            "maatwebsite/excel": "^2.0",
-            "php": ">=7.0",
-            "yajra/laravel-datatables-html": "3.*",
-            "yajra/laravel-datatables-oracle": "8.*"
-          },
-          "require-dev": {
-            "mockery/mockery": "~1.0",
-            "phpunit/phpunit": "~6.0"
-          },
-          "suggest": {
-            "barryvdh/laravel-snappy": "Allows exporting of dataTable to PDF using the print view.",
-            "dompdf/dompdf": "Allows exporting of dataTable to PDF using the DomPDF."
-          },
-          "type": "library",
-          "extra": {
-            "branch-alias": {
-              "dev-master": "3.0-dev"
+            "name": "yajra/laravel-datatables-buttons",
+            "version": "v3.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-datatables-buttons.git",
+                "reference": "f473e0695c668106665d68f002993a086a8705ab"
             },
-            "laravel": {
-              "providers": [
-                "Yajra\\DataTables\\ButtonsServiceProvider"
-              ]
-            }
-          },
-          "autoload": {
-            "psr-4": {
-              "Yajra\\DataTables\\": "src/"
-            }
-          },
-          "notification-url": "https://packagist.org/downloads/",
-          "license": [
-            "MIT"
-          ],
-          "authors": [
-            {
-              "name": "Arjay Angeles",
-              "email": "aqangeles@gmail.com"
-            }
-          ],
-          "description": "Laravel DataTables Buttons Plugin.",
-          "keywords": [
-            "buttons",
-            "datatables",
-            "jquery",
-            "laravel"
-          ],
-          "time": "2019-01-23T01:11:58+00:00"
-        },
-      {
-        "name": "yajra/laravel-datatables-html",
-        "version": "v3.13.0",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/yajra/laravel-datatables-html.git",
-          "reference": "1c3c2ef2e88f965ad62fe21b98daac99f77151b2"
-        },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/yajra/laravel-datatables-html/zipball/1c3c2ef2e88f965ad62fe21b98daac99f77151b2",
-          "reference": "1c3c2ef2e88f965ad62fe21b98daac99f77151b2",
-          "shasum": ""
-        },
-        "require": {
-          "laravelcollective/html": "^5.4",
-          "php": ">=7.0",
-          "yajra/laravel-datatables-oracle": "8.*"
-        },
-        "require-dev": {
-          "mockery/mockery": "0.9.*",
-          "phpunit/phpunit": "~6.0"
-        },
-        "type": "library",
-        "extra": {
-          "branch-alias": {
-            "dev-master": "3.0-dev"
-          },
-          "laravel": {
-            "providers": [
-              "Yajra\\DataTables\\HtmlServiceProvider"
-            ]
-          }
-        },
-        "autoload": {
-          "psr-4": {
-            "Yajra\\DataTables\\": "src/"
-          }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-          "MIT"
-        ],
-        "authors": [
-          {
-            "name": "Arjay Angeles",
-            "email": "aqangeles@gmail.com"
-          }
-        ],
-        "description": "Laravel DataTables HTML builder plugin for Laravel 5.4+.",
-        "keywords": [
-          "JS",
-          "datatables",
-          "html",
-          "jquery",
-          "laravel"
-        ],
-        "time": "2018-11-10T05:15:10+00:00"
-      },
-      {
-        "name": "yajra/laravel-datatables-oracle",
-        "version": "v8.13.3",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/yajra/laravel-datatables.git",
-          "reference": "387512371d3688f3fe1bf75e3e9e53b3d1426736"
-        },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/387512371d3688f3fe1bf75e3e9e53b3d1426736",
-          "reference": "387512371d3688f3fe1bf75e3e9e53b3d1426736",
-          "shasum": ""
-        },
-        "require": {
-          "illuminate/database": "5.4.*|5.5.*|5.6.*|5.7.*",
-          "illuminate/filesystem": "5.4.*|5.5.*|5.6.*|5.7.*",
-          "illuminate/http": "5.4.*|5.5.*|5.6.*|5.7.*",
-          "illuminate/support": "5.4.*|5.5.*|5.6.*|5.7.*",
-          "illuminate/view": "5.4.*|5.5.*|5.6.*|5.7.*",
-          "php": ">=7.0"
-        },
-        "require-dev": {
-          "orchestra/testbench": "~3.5"
-        },
-        "suggest": {
-          "yajra/laravel-datatables-buttons": "Plugin for server-side exporting of dataTables.",
-          "yajra/laravel-datatables-editor": "Plugin to use DataTables Editor (requires a license).",
-          "yajra/laravel-datatables-fractal": "Plugin for server-side response using Fractal.",
-          "yajra/laravel-datatables-html": "Plugin for server-side HTML builder of dataTables."
-        },
-        "type": "library",
-        "extra": {
-          "branch-alias": {
-            "dev-master": "8.0-dev"
-          },
-          "laravel": {
-            "providers": [
-              "Yajra\\DataTables\\DataTablesServiceProvider"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables-buttons/zipball/f473e0695c668106665d68f002993a086a8705ab",
+                "reference": "f473e0695c668106665d68f002993a086a8705ab",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^5.4",
+                "maatwebsite/excel": "^2.0",
+                "php": ">=7.0",
+                "yajra/laravel-datatables-html": "3.*",
+                "yajra/laravel-datatables-oracle": "8.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~6.0"
+            },
+            "suggest": {
+                "barryvdh/laravel-snappy": "Allows exporting of dataTable to PDF using the print view.",
+                "dompdf/dompdf": "Allows exporting of dataTable to PDF using the DomPDF."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\DataTables\\ButtonsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
             ],
-            "aliases": {
-              "DataTables": "Yajra\\DataTables\\Facades\\DataTables"
-            }
-          }
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "Laravel DataTables Buttons Plugin.",
+            "keywords": [
+                "buttons",
+                "datatables",
+                "jquery",
+                "laravel"
+            ],
+            "time": "2019-01-23T01:11:58+00:00"
         },
-        "autoload": {
-          "psr-4": {
-            "Yajra\\DataTables\\": "src/"
-          },
-          "files": [
-            "src/helper.php"
-          ]
+        {
+            "name": "yajra/laravel-datatables-editor",
+            "version": "v1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-datatables-editor.git",
+                "reference": "da9cf617c202115bdb13357ee091b0ba4a4ac224"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables-editor/zipball/da9cf617c202115bdb13357ee091b0ba4a4ac224",
+                "reference": "da9cf617c202115bdb13357ee091b0ba4a4ac224",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "5.5.*|5.6.*|5.7.*",
+                "illuminate/database": "5.5.*|5.6.*|5.7.*",
+                "illuminate/http": "5.5.*|5.6.*|5.7.*",
+                "illuminate/validation": "5.5.*|5.6.*|5.7.*",
+                "php": ">=7.0",
+                "yajra/laravel-datatables-buttons": "3.*|4.*"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\DataTables\\EditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "Laravel DataTables Editor plugin for Laravel 5.5+.",
+            "keywords": [
+                "JS",
+                "datatables",
+                "editor",
+                "html",
+                "jquery",
+                "laravel"
+            ],
+            "time": "2018-11-03T03:57:04+00:00"
         },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-          "MIT"
-        ],
-        "authors": [
-          {
-            "name": "Arjay Angeles",
-            "email": "aqangeles@gmail.com"
-          }
-        ],
-        "description": "jQuery DataTables API for Laravel 4|5",
-        "keywords": [
-          "datatables",
-          "jquery",
-          "laravel"
-        ],
-        "time": "2019-01-05T02:12:47+00:00"
-      },
-      {
+        {
+            "name": "yajra/laravel-datatables-html",
+            "version": "v3.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-datatables-html.git",
+                "reference": "1c3c2ef2e88f965ad62fe21b98daac99f77151b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables-html/zipball/1c3c2ef2e88f965ad62fe21b98daac99f77151b2",
+                "reference": "1c3c2ef2e88f965ad62fe21b98daac99f77151b2",
+                "shasum": ""
+            },
+            "require": {
+                "laravelcollective/html": "^5.4",
+                "php": ">=7.0",
+                "yajra/laravel-datatables-oracle": "8.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\DataTables\\HtmlServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "Laravel DataTables HTML builder plugin for Laravel 5.4+.",
+            "keywords": [
+                "JS",
+                "datatables",
+                "html",
+                "jquery",
+                "laravel"
+            ],
+            "time": "2018-11-10T05:15:10+00:00"
+        },
+        {
+            "name": "yajra/laravel-datatables-oracle",
+            "version": "v8.13.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-datatables.git",
+                "reference": "387512371d3688f3fe1bf75e3e9e53b3d1426736"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/387512371d3688f3fe1bf75e3e9e53b3d1426736",
+                "reference": "387512371d3688f3fe1bf75e3e9e53b3d1426736",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "5.4.*|5.5.*|5.6.*|5.7.*",
+                "illuminate/filesystem": "5.4.*|5.5.*|5.6.*|5.7.*",
+                "illuminate/http": "5.4.*|5.5.*|5.6.*|5.7.*",
+                "illuminate/support": "5.4.*|5.5.*|5.6.*|5.7.*",
+                "illuminate/view": "5.4.*|5.5.*|5.6.*|5.7.*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.5"
+            },
+            "suggest": {
+                "yajra/laravel-datatables-buttons": "Plugin for server-side exporting of dataTables.",
+                "yajra/laravel-datatables-editor": "Plugin to use DataTables Editor (requires a license).",
+                "yajra/laravel-datatables-fractal": "Plugin for server-side response using Fractal.",
+                "yajra/laravel-datatables-html": "Plugin for server-side HTML builder of dataTables."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\DataTables\\DataTablesServiceProvider"
+                    ],
+                    "aliases": {
+                        "DataTables": "Yajra\\DataTables\\Facades\\DataTables"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+                },
+                "files": [
+                    "src/helper.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "jQuery DataTables API for Laravel 4|5",
+            "keywords": [
+                "datatables",
+                "jquery",
+                "laravel"
+            ],
+            "time": "2019-01-05T02:12:47+00:00"
+        },
+        {
             "name": "zendframework/zend-diactoros",
             "version": "1.8.6",
             "source": {

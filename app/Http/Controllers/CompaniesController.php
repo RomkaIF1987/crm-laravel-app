@@ -7,6 +7,8 @@ use App\Http\Requests\CompanyRequest;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use App\Mail\OrderShipped;
+use App\DataTables\CompaniesDataTable;
+use App\DataTables\CompaniesDataTablesEditor;
 
 class CompaniesController extends Controller
 {
@@ -29,7 +31,6 @@ class CompaniesController extends Controller
         ]);
     }
 
-
     /**
      * Show the form for creating a new resource.
      * @return \Illuminate\Http\Response
@@ -43,8 +44,9 @@ class CompaniesController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     * @param CompanyRequest $request
+     * @param CompaniesDataTablesEditor $editor
      * @return \Illuminate\Http\Response
+     * @throws \Yajra\DataTables\DataTablesEditorException
      */
     public function store(CompanyRequest $request)
     {
